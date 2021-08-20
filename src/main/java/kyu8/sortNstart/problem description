@@ -1,0 +1,65 @@
+You will be given a vector of strings. You must sort it alphabetically
+(case-sensitive, and based on the ASCII values of the chars) and then return the first value.
+
+The returned value must be a string, and have "***" between each of its letters.
+
+You should not remove or add elements from/to the array.
+
+
+OBS: Não sei usar JOIN, SPLIP.
+    String[] arr = word.split ("");
+    String result = String.join("***", arr);
+
+REGEX MODIFICADORES:
+    (?i) ignora maiusculas e minusculas.
+    (?x) Comentários
+    (?m) Multilinhas
+    (?s) Dottal
+
+
+Translated:
+1. Você receberá um vetor de strings.
+2. Você deve classificá-lo em ordem alfabética
+3. diferencia maiúsculas de minúsculas e com base nos valores ASCII dos caracteres)
+4. Em seguida, retorna o primeiro valor.
+5. Retorno deve ser String, e ter "***" entre cada letra.
+
+
+
+The other code to check:
+
+public class SortandStar {
+    public static void main( String[] args ) {
+        String[] arrayString = {"bitcoin", "take", "over", "the", "world"};
+        String[] arrayAlpha = {"e","d","c","b","a"};
+        String[] countries = {  "Zimbabwe", "South-Africa", "India", "America",
+                                "Yugoslavia", " Australia", "Denmark", "France",
+                                 "Netherlands", "Italy", "Germany"};
+
+        System.out.println(twoSort(countries));
+    }
+
+    public static String twoSort( String[] s ) {
+        int size = s.length; // percorre o vetor
+        String result = "";
+
+        for(int i = 0; i < size - 1; i++) {
+            System.out.println("i:"+i);
+            for (int j = i + 1; j < s.length; j++) {
+            System.out.println("j:"+j);
+                if(s[i].compareTo(s[j]) > 0) {
+                    String temp = s[i];
+                    s[i] = s[j];
+                    s[j] = temp;
+                }
+            }
+        }
+        String word = s[0];
+        int length = word.length() - 1;
+        for(int i = 0; i < length; i++) {
+            result += word.charAt(i) + "***";
+        }
+        return result + word.charAt(length);
+    }
+
+}

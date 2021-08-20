@@ -1,0 +1,18 @@
+You are going to be given an array of integers.
+Your job is to take that array and find an index N where the sum of the integers to the left of N is equal to the sum of the integers to the right of N.
+If there is no index that would make this happen, return -1.
+
+1. Vou receber um array de inteiros
+2. Somando o lado esquerdo e direito os 2 tem que dar o mesmo valor pra cada lado;
+3. Se não ouvir indice que faço isso acontecer return -1.
+
+
+OBSERVAÇÕES: Arredondamentos são feitos pra baixo. vetor com 7 elementos fica 7/2 = 3(terceiro elemento).
+
+[ 1,2,3,4,3,2,1 ]  array de 7 posições, terceiro elemento é o 4.
+
+[ 1,2,9,7,2,1 ]  array de 6 posições, terceiro elemento é o 7.  Array 6 / 2 = 3.
+
+    {4, 5, 6, 7, 8, 9, 10, 9, 8, 7, 6, 5, 4}
+
+ Divida esse troço num ponto onde os 2 lados vai dar igual.
