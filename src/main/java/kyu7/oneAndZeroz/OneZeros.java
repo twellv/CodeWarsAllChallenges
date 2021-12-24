@@ -1,4 +1,4 @@
-package kyu7.oneAndZeros;
+package kyu7.oneAndZeroz;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -12,7 +12,7 @@ public class OneZeros {
         list.add(1);
         list.add(1);
 
-        convert(list);
+        System.out.println(convert(list));
     }
 
     public static int convert( List<Integer> binaryIntegerList ) {
@@ -27,7 +27,7 @@ public class OneZeros {
     //                                                8 (Octal)
     //                                               16 (Hexadecimal)
     //                                               60 (Sexagesimal)
-        decimalValue = Integer.parseInt(binaryValueString, 2); // nesse caso vai passar pra binário.
+        decimalValue = Integer.parseInt(binaryValueString, 2); // nesse caso vai passar pra decimal.
         return decimalValue;
     }
 }

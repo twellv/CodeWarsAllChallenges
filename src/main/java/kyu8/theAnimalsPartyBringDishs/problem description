@@ -13,7 +13,7 @@ For example, the great blue heron is bringing garlic naan and the chickadee is b
 - Must have at least two letters.
 - beast and dish may contain hyphens and spaces, but these will not appear at the beginning or end of the string.
 
-Codigo alheio:
+Korean Code:
 
 public static boolean feast(String beast, String dish) {
 
