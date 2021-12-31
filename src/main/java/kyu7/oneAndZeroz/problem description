@@ -1,0 +1,13 @@
+1. Given an array of ones and zeroes, convert the equivalent binary value to an integer.
+Eg(por exemplo): [0, 0, 0, 1] is treated as 0001 which is the binary representation of 1.
+
+    Params:
+    s – the String containing the integer representation to be parsed
+    radix – the radix to be used while parsing s.
+    Returns:
+    the integer represented by the string argument in the specified radix.
+
+
+Korean Code:
+
+    return binary.stream().reduce((x, y) -> x * 2 + y).get();
