@@ -1,4 +1,4 @@
-package kyu7.oneAndZeroz;
+package kyu7.oneAndZeros;
 
 import java.util.ArrayList;
 import java.util.List;
