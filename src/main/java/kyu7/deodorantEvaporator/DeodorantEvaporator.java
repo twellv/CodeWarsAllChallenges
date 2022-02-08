@@ -8,8 +8,8 @@ public class DeodorantEvaporator {
     public static int evaporator( double content, double evap_per_day, double threshold ) {
         int days = 0;
         Double evapaporationPercentage = (evap_per_day / 100);
-        Double thresholdPercentage = (threshold / 100); //  0,05
-        Double minimumThresholdValue = content * thresholdPercentage; // 0,5ml
+        Double thresholdPercentage = (threshold / 100);
+        Double minimumThresholdValue = content * thresholdPercentage;
 
         while (content >= minimumThresholdValue) {
             content = content - (content * evapaporationPercentage);
